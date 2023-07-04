@@ -1,0 +1,89 @@
+//--------------------------------- nullstyle -----------------------------------------//
+
+@import "nullstyle.scss";
+
+//------------------------------------------------------------------------------------//
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+
+}
+.header {
+	flex: 0 0 60px;
+	background-color: aquamarine;
+		&__container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__navbar {
+		}
+
+		&__menu {
+			display: flex;
+		}
+
+		&__link {
+		}
+}
+.main {
+	flex: 1 1 auto;
+		&__home {
+		}
+
+		&__portfolio {
+		}
+
+		&__about {
+		}
+
+		&__skills {
+		}
+
+		&__contact {
+		}
+}
+.home {
+
+		&__container {
+		}
+
+		&__text {
+		}
+
+		&__img {
+		}
+}
+.portfolio {
+
+		&__container {
+		}
+}
+.about {
+
+		&__container {
+		}
+}
+.skills {
+
+		&__container {
+		}
+}
+.contact {
+
+		&__container {
+		}
+}
+
+
+.footer {
+}
+
+[class*="__container"]{
+	max-width: 1057px;
+	margin: 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
