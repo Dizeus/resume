@@ -168,59 +168,7 @@ html {
 		}
 }
 
-.main-button{
-	padding: 0px 40px;
-		border-radius: 30px;
-		border: 1px solid #333;
-		background: #FFF;
-		box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.22);
-	height: 40px;
-		&:hover {
-			background: #333;
-			color: white;
-			transition: all ease 0.5s;
-		}
-}
 
-.title {
-	display: flex;
-	column-gap: 8px;
-
-	&__logo {
-		background-color: palegreen;
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		background:#333;
-		color: #FFF;
-		text-align: center;
-		font-family: Poppins;
-		font-size: 28px;
-		font-style: normal;
-		font-weight: 800;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	&__text {
-		display: none;
-		@media (min-width:767.98px) {
-			display: block;
-			color: #222;
-			font-size: 20px;
-			font-family: Poppins;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 50px;	
-		}
-		
-	}
-
-	&__name {
-		font-weight: 600;
-	}
-}
 
 
 
@@ -402,115 +350,120 @@ html {
 			}
 		}
 
-		&__portfolio {
-		}
+		.portfolio {
 
-		&__about {
-		}
+			&__container {
+			}
 
-		&__skills {
-		}
+			&__title {
+			}
 
+			&__projects {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+			}
+
+			&__item {
+				width: 300px;
+				height: 200px;
+				border-radius: 10px;
+				border: 1px solid #E5E5E5;
+				background: #bd6a6a;
+				&:hover {
+						-webkit-transform: translateY(-5px);
+						-ms-transform: translateY(-5px);
+						-o-transform: translateY(-5px);
+						transform: translateY(-5px);
+						-webkit-box-shadow: 0 12px 17px rgba(0, 0, 0, .12);
+						-moz-box-shadow: 0 12px 17px rgba(0, 0, 0, .12);
+						-o-box-shadow: 0 12px 17px rgba(0, 0, 0, .12);
+						box-shadow: 0 12px 17px rgba(0, 0, 0, .12)
+				}
+			}
+		}
+		
 		&__contact {
 		}
 }
 
 
-
-@media only screen and (max-width:1100px) {
-	.home-content {
-		margin: 5% 0
-	}
-}
-
-@media only screen and (max-width:767px) {
-	.home-photo {
-		width: 60%;
-		padding-bottom: calc(60% - 36px);
-		margin: 30px auto
-	}
-
-	.home-text {
-		padding-right: 0
-	}
-
-	.home-text.hp-left {
-		padding-left: 0
-	}
-
-	.home-text h1,
-	.home-text h4 {
-		text-align: center
-	}
-
-	.home-buttons {
-		text-align: center
-	}
-}
-
-@media only screen and (max-width:648px) {
-
-	.home-photo,
-	.home-photo.hp-left {
-		width: 70%;
-		padding-bottom: calc(70% - 36px)
-	}
-}
-
-@media only screen and (max-width:500px) {
-
-	.home-photo,
-	.home-photo.hp-left {
-		width: 90%;
-		padding-bottom: calc(90% - 36px)
-	}
-
-	.home-text h1 {
-		font-size: 36px;
-		line-height: 42px
-	}
-
-	.home-text h4 {
-		font-size: 14px
-	}
-}
-
-#home_content_954218bfd87cb3b458721f4a70135965 .home-photo .hp-inner {
-	background-image: url(//lmpixels.com/wp/leven-wp/full-width/wp-content/uploads/sites/3/2019/12/cesar-rincon-1024x1024.jpg)
-}
-
-
-.home {
-
-		&__container {
-		}
-
-		&__text {
-		}
-
-		&__img {
+.title{
+	text-align: center;
+		color: #333;
+		font-family: Poppins;
+		font-size: 26px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 25.2px;
+		margin-bottom: 30px;
+	
+		&::after {
+			content: '';
+			margin: 10px 0 0 0;
+			width: 100px;
+			opacity: 0.2;
+			height: 2px;
+			display: block;
+			background-color: #333;
+			margin: 10px auto;
 		}
 }
-.portfolio {
 
-		&__container {
+.main-button{
+	padding: 0px 40px;
+		border-radius: 30px;
+		border: 1px solid #333;
+		background: #FFF;
+		box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.22);
+	height: 40px;
+		&:hover {
+			background: #333;
+			color: white;
+			transition: all ease 0.5s;
 		}
 }
-.about {
 
-		&__container {
-		}
-}
-.skills {
+.logo {
+	display: flex;
+	column-gap: 8px;
 
-		&__container {
-		}
-}
-.contact {
+	&__img {
+		background-color: palegreen;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background:#333;
+		color: #FFF;
+		text-align: center;
+		font-family: Poppins;
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 800;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
-		&__container {
+	&__text {
+		display: none;
+		@media (min-width:767.98px) {
+			display: block;
+			color: #222;
+			font-size: 20px;
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 50px;	
 		}
+		
+	}
+
+	&__name {
+		font-weight: 600;
+	}
 }
+
+
 
 
 .footer {
