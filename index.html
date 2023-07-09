@@ -18,21 +18,22 @@
 						<span class="title__name">Illia</span> Kharchuk
 					</div>
 				</div>
-				
 				<nav class="header__navbar">
-					<ul class="header__menu">
-						<a href="#" class="header__link-href"><li onclick="onHeaderLinkClick(event)" class="header__link">About me</li></a>
-						<a href="#" class="header__link-href"><li onclick="onHeaderLinkClick(event)" class="header__link">Skills</li></a>
-						<a href="#" class="header__link-href"><li onclick="onHeaderLinkClick(event)" class="header__link">Portfolio</li></a>
-						<a href="#" class="header__link-href"><li onclick="onHeaderLinkClick(event)" class="header__link">Contact</li></a>
-					</ul>
+					<div class="header__menu-body">
+						<ul class="header__list">
+							<a href="#" class="header__link-href"><li onclick="onHeaderLinkClick(event)" class="header__link">About me</li></a>
+							<a href="#" class="header__link-href"><li onclick="onHeaderLinkClick(event)" class="header__link">Skills</li></a>
+							<a href="#" class="header__link-href"><li onclick="onHeaderLinkClick(event)" class="header__link">Portfolio</li></a>
+							<a href="#" class="header__link-href"><li onclick="onHeaderLinkClick(event)" class="header__link">Contact</li></a>
+						</ul>
+					</div>
 					<button class="header__cv main-button">Download CV</button>
+					<div class="header__burger" onclick="onMenuBurgerClick()">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
 				</nav>
-				<!--<div class="header__burger">
-					<div class="first"></div>
-					<div class="second"></div>
-					<div class="third"></div>
-				</div>-->
 
 			</div>
 			
@@ -40,8 +41,8 @@
         <main class="main">
 			<section class="about">
 				<div class="about__container">
-					<div class="about__img">
-						<div class="about__inner"></div>
+					<div class="about__img-container">
+						<img src="image/me.jpg" class="about__img">
 						
 					</div>
 					
@@ -58,6 +59,96 @@
 					
 				</div>
 				
+			</section>
+			<section class="skills">
+				<div class="skills__container">
+					<div class="skills__title">Skills</div>
+					
+					<div class="skills__content">
+						<div class="skills__text">
+						
+							<div class="skills__subtitle">Main Toolkit</div>
+							<ul class="skills__list">
+								<li class="skills__item">
+									<img src="image/skills-icons/html.svg" alt="HTML">
+									<div class="skills__item-text">HTML</div>
+								</li>
+								<li class="skills__item">
+									<img src="image/skills-icons/css.svg" alt="CSS">
+									<div class="skills__item-text">CSS</div>
+								</li>
+								<li class="skills__item">
+									<img src="image/skills-icons/javascript.svg" alt="Javascript">
+									<div class="skills__item-text">Javascript</div>
+								</li>
+								<li class="skills__item">
+									<img src="image/skills-icons/typescript.svg" alt="Typescript">
+									<div class="skills__item-text">Typescript</div>
+								</li>
+								<li class="skills__item">							
+									<img src="image/skills-icons/react.svg" alt="React">
+									<div class="skills__item-text">REACT</div>
+								</li>
+								<li class="skills__item">
+									<img src="image/skills-icons/redux.svg" alt="Redux">
+									<div class="skills__item-text">REDUX</div>
+								</li>
+								<li class="skills__item">
+									<img src="image/skills-icons/sass.svg" alt="SASS">
+									<div class="skills__item-text">SASS</div>
+								</li>
+								<li class="skills__item">
+									<img src="image/skills-icons/git.svg" alt="Git">
+									<div class="skills__item-text">Git</div>
+								</li>
+								<li class="skills__item">
+									<img src="image/skills-icons/github.svg" alt="Github">
+									<div class="skills__item-text">Github</div>
+								</li>
+								<li class="skills__item">
+									<img src="image/skills-icons/accessibility.svg" alt="accessibility">
+									<div class="skills__item-text">Accessibility</div>
+								</li>
+							</ul>
+
+							<div class="skills__subtitle">Additional Toolkit</div>
+							<ul class="skills__list">
+								<li class="skills__item">
+									<img src="image/skills-icons/python.svg" alt="Python">
+									<div class="skills__item-text">PYTHON</div>
+								</li>
+								<li class="skills__item">
+									<img src="image/skills-icons/c++.svg" alt="C++">
+									<div class="skills__item-text">C++</div>
+								</li>
+								<li class="skills__item">
+									<img src="image/skills-icons/java.svg" alt="Java">
+									<div class="skills__item-text">Java</div>
+								</li>
+								<li class="skills__item">
+									<img src="image/skills-icons/mysql.svg" alt="MySQL">
+									<div class="skills__item-text">MySQL</div>
+								</li>
+								<li class="skills__item">							
+									<img src="image/skills-icons/postgresql.svg" alt="PostgreSQL">
+									<div class="skills__item-text">PostgreSQL</div>
+								</li>
+								<li class="skills__item">
+									<img src="image/skills-icons/avocode.svg" alt="Avocode">
+									<div class="skills__item-text">Avocode</div>
+								</li>
+								<li class="skills__item">
+									<img src="image/skills-icons/figma.svg" alt="Figma">
+									<div class="skills__item-text">Figma</div>
+								</li>
+							</ul>
+						</div>
+						<div class="skills__image">
+							<img src="image/skills.jpg" alt="">
+						</div>
+					</div>
+					
+				</div>
 			</section>
         </main>
         <footer id="footer" class="footer">
