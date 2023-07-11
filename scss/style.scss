@@ -334,7 +334,7 @@ html {
 				align-items: center;
 				justify-content: space-around;
 				text-align: center;
-				padding: 5px 0 0 0;
+				padding: 10px 0 0 0;
 				&:hover{
 					background-color: #e4e4e4;
 				}
@@ -344,15 +344,15 @@ html {
 			}
 			&__item-text{
 				padding: 10px 0;
-				font-size: 26px;
-				font-family: "Nanum Pen Script", "cursive";
-				text-transform: uppercase;
+				font-size: 16px;
+				//text-transform: uppercase;
 			}
 		}
 
 		.portfolio {
 
 			&__container {
+				margin-bottom: 100px;
 			}
 
 			&__title {
@@ -368,7 +368,7 @@ html {
 				height: 200px;
 				border-radius: 10px;
 				border: 1px solid #E5E5E5;
-				background: #bd6a6a;
+				background: #333;
 				&:hover {
 						-webkit-transform: translateY(-5px);
 						-ms-transform: translateY(-5px);
@@ -382,8 +382,79 @@ html {
 			}
 		}
 		
-		&__contact {
+		.contact {
+			background: #dcdcdc;
+			&__container {
+			}
+
+			&__title {
+			}
+
+			&__content {
+				display: flex;
+			}
+
+			&__info {
+				flex: 0 1 50%;
+				background-color: #d0d0d0;
+			}
+
+			&__description {
+				font-size: 18px;
+				font-weight: 600;
+			}
+
+			&__details {
+			}
+
+			&__form {
+				display: flex;
+				flex-direction: column;
+				row-gap: 20px;
+				flex: 0 1 50%;
+			}
+			&__form-name {
+				padding: 11.53px 11.53px 11.54px 11.53px;
+				border-radius: 5px;
+				border: 1px solid #333;
+				background: #FFF;
+				&::placeholder{
+					color: #757575;
+					font-size: 16px;
+				}
+			}
+			&__form-email {
+				padding: 11.53px 11.53px 11.54px 11.53px;
+				border-radius: 5px;
+				border: 1px solid #333;
+				background: #FFF;
+				&::placeholder{
+					color: #757575;
+					font-size: 16px;
+				}
+			}
+			&__form-message {
+				padding: 11.53px 11.53px 11.54px 11.53px;
+				border-radius: 5px;
+				border: 1px solid #333;
+				background: #FFF;
+				&::placeholder{
+					color: #757575;
+					font-size: 16px;
+				}
+			}
+			&__form-button {
+				display: flex;
+				align-self: flex-start;
+				padding: 10px;
+				
+				border-radius: 5px;
+				border: 1px solid #333;
+				background: #333;
+				color: #FFF;
+			}
 		}
+
 }
 
 

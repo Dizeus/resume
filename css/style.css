@@ -375,7 +375,7 @@ html {
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  padding: 5px 0 0 0;
+  padding: 10px 0 0 0;
 }
 .main .skills__item:hover {
   background-color: #e4e4e4;
@@ -385,9 +385,10 @@ html {
 }
 .main .skills__item-text {
   padding: 10px 0;
-  font-size: 26px;
-  font-family: "Nanum Pen Script", "cursive";
-  text-transform: uppercase;
+  font-size: 16px;
+}
+.main .portfolio__container {
+  margin-bottom: 100px;
 }
 .main .portfolio__projects {
   display: grid;
@@ -398,7 +399,7 @@ html {
   height: 200px;
   border-radius: 10px;
   border: 1px solid #E5E5E5;
-  background: #bd6a6a;
+  background: #333;
 }
 .main .portfolio__item:hover {
   -webkit-transform: translateY(-5px);
@@ -410,6 +411,66 @@ html {
   -o-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
   box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
 }
+.main .contact {
+  background: #dcdcdc;
+}
+.main .contact__content {
+  display: flex;
+}
+.main .contact__info {
+  flex: 0 1 50%;
+  background-color: #d0d0d0;
+}
+.main .contact__description {
+  font-size: 18px;
+  font-weight: 600;
+}
+.main .contact__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  flex: 0 1 50%;
+}
+.main .contact__form-name {
+  padding: 11.53px 11.53px 11.54px 11.53px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background: #FFF;
+}
+.main .contact__form-name::placeholder {
+  color: #757575;
+  font-size: 16px;
+}
+.main .contact__form-email {
+  padding: 11.53px 11.53px 11.54px 11.53px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background: #FFF;
+}
+.main .contact__form-email::placeholder {
+  color: #757575;
+  font-size: 16px;
+}
+.main .contact__form-message {
+  padding: 11.53px 11.53px 11.54px 11.53px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background: #FFF;
+}
+.main .contact__form-message::placeholder {
+  color: #757575;
+  font-size: 16px;
+}
+.main .contact__form-button {
+  display: flex;
+  align-self: flex-start;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background: #333;
+  color: #FFF;
+}
+
 .title {
   text-align: center;
   color: #333;
