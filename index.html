@@ -51,7 +51,7 @@
 						<div class="about__name">Illia Kharchuk</div>
 						<div class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ratione, nesciunt, esse nulla nihil tempore facilis at cum vero ullam optio adipisci quaerat quis, fugiat alias. Dolor, nisi dolores, nihil commodi culpa, architecto vitae eius maiores deserunt natus eligendi qui. Veniam dicta voluptates atque ad fugit voluptatem! </div>
 						<div class="about__buttons">
-							<button class="about__cv main-button">Download CV</button>
+							<button class="about__cv main-button">Portfolio</button>
 							<button class="about__contact main-button">Contact</button>
 						</div>
 						
@@ -62,8 +62,7 @@
 			</section>
 			<section class="skills">
 				<div class="skills__container">
-					<div class="skills__title">Skills</div>
-					
+					<div class="skills__title">Skills</div>				
 					<div class="skills__content">
 						<div class="skills__text">
 						
@@ -136,7 +135,6 @@
 							</ul>
 						</div>
 					</div>
-					
 				</div>
 			</section>
 			<section class="portfolio">
@@ -152,28 +150,67 @@
 			</section>
 			<section class="contact">
 				<div class="contact__container">
-					<div class="contact__title title">Contact</div>
-					<div class="contact__content">
-						<div class="contact__info">
-							<div class="contact__description">Let's Connect!</div>
-							<div class="contact__details">If you ever want to grab a coffee/bubble tea (virtually) or just want a quick chat - you can find me on social media or
-							you can send me a message here!</div>
+					<div class="contact__data">
+							<div class="contact__title title">Contact</div>
 							
-						</div>
-						<form action="#" class="contact__form">
+							<div class="contact__header">
+								Email
+							</div>
+							<div class="contact__copytext">
+							
+								<input type="text"  class="contact__info" value="kharchukillia@gmail.com" readonly>
+								<button class="contact__copy-button" onclick='onCopyInfo(0)'><img src="image/contact-icons/copy.svg" alt="copy"></button>
+							</div>
+							<div class="contact__header">
+								Number
+							</div>
+							<div class="contact__copytext">
+								<input type="text" class="contact__info" value="+380675407242" readonly>
+								<button class="contact__copy-button" onclick='onCopyInfo(1)'><img src="image/contact-icons/copy.svg" alt="copy"></button>
+							</div>
+							<div class="contact__header">
+								Location
+							</div>
+							<div class="contact__copytext">
+								<input type="text" class="contact__info" value="Khmelnytskyi / Kyiv, Ukraine (ready to relocate / work remotely)" readonly>
+								<button class="contact__copy-button" onclick='onCopyInfo(1)'><img src="image/contact-icons/copy.svg"
+										alt="copy"></button>
+							</div>
+							<div class="contact__icons">
+								<img src="image/contact-icons/github.svg" alt="Github">
+								<img src="image/contact-icons/linkedin.svg" alt="Linkedin">
+								<img src="image/contact-icons/telegram.svg" alt="Telegram">
+							</div>					
+					</div>
+					<form action="#" class="contact__form">
 							<input class="contact__form-name" type="text" name="name" placeholder="Name">
 							<input class="contact__form-email" type="email" name="email" placeholder="email">
 							<textarea class="contact__form-message" name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
 							<button class="contact__form-button" type="submit">SEND MESSAGE</button>
-						</form>
-					</div>
+					</form>
 					
 				</div>
 				
 			</section>
         </main>
         <footer id="footer" class="footer">
-			footer
+			<div class="footer__container">
+				<ul class="footer__list">
+					<a href="#" class="footer__link-href">
+						<li onclick="onHeaderLinkClick(event)" class="footer__link">About me</li>
+					</a>
+					<a href="#" class="footer__link-href">
+						<li onclick="onHeaderLinkClick(event)" class="footer__link">Skills</li>
+					</a>
+					<a href="#" class="footer__link-href">
+						<li onclick="onHeaderLinkClick(event)" class="footer__link">Portfolio</li>
+					</a>
+					<a href="#" class="footer__link-href">
+						<li onclick="onHeaderLinkClick(event)" class="footer__link">Contact</li>
+					</a>
+				</ul>
+			</div>
+			
         </footer>
     </div>
     <script src="js/script.js"></script>

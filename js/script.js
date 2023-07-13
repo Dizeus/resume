@@ -13,3 +13,11 @@ const onMenuBurgerClick = () =>{
 	document.querySelector(".header__menu-body").classList.toggle('active');
 	document.body.classList.toggle("lock");
 }
+
+const onCopyInfo = (n) =>{
+	let copyText = [...document.querySelectorAll('.contact__info')];
+    copyText[n].select();
+    copyText[n].setSelectionRange(0, 99999); /* For mobile devices */
+    document.execCommand("copy");
+    alert("Copied: " + copyText[n].value);
+}
