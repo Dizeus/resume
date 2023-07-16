@@ -1,5 +1,11 @@
 const links = document.getElementsByClassName('header__link');
-const onHeaderLinkClick = (event)=>{
+
+const onHeaderLinkClick = (event, id)=>{
+	const section = document.getElementById(`${id}`);
+	const y = section.getBoundingClientRect().top + window.scrollY - event.target.offsetParent.getBoundingClientRect().height;
+	setTimeout(function() {window.scrollTo({top:y, left:0, behavior: "smooth"})},1);
+
+
 	if(event.target.classList.value !== 'header__link header__link_active'){
 		[...links].forEach(link => {
 			link.classList.value === 'header__link header__link_active' && link.classList.remove('header__link_active')

@@ -21,10 +21,10 @@
 				<nav class="header__navbar">
 					<div class="header__menu-body">
 						<ul class="header__list">
-							<a href="#about" class="header__link-href"><li onclick="onHeaderLinkClick(event)" class="header__link">About me</li></a>
-							<a href="#skills" class="header__link-href"><li onclick="onHeaderLinkClick(event)" class="header__link">Skills</li></a>
-							<a href="#portfolio" class="header__link-href"><li onclick="onHeaderLinkClick(event)" class="header__link">Portfolio</li></a>
-							<a href="#contact" class="header__link-href"><li onclick="onHeaderLinkClick(event)" class="header__link">Contact</li></a>
+							<li onclick="onHeaderLinkClick(event, 'about')" class="header__link">About me</li>
+							<li onclick="onHeaderLinkClick(event, 'skills')" class="header__link">Skills</li>
+							<li onclick="onHeaderLinkClick(event, 'portfolio')" class="header__link">Portfolio</li>
+							<li onclick="onHeaderLinkClick(event, 'contact')" class="header__link">Contact</li>
 						</ul>
 					</div>
 					<button class="header__cv main-button">Download CV</button>
@@ -52,8 +52,8 @@
 							<div class="about__name">Illia Kharchuk</div>
 							<div class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ratione, nesciunt, esse nulla nihil tempore facilis at cum vero ullam optio adipisci quaerat quis, fugiat alias. Dolor, nisi dolores, nihil commodi culpa, architecto vitae eius maiores deserunt natus eligendi qui. Veniam dicta voluptates atque ad fugit voluptatem! </div>
 							<div class="about__buttons">
-								<button class="about__cv button">Portfolio</button>
-								<button class="about__contact button">Contact</button>
+								<button onclick="" class="about__cv button">Portfolio</button>
+								<button onclick="" class="about__contact button">Contact</button>
 							</div>
 							
 						</div>
@@ -188,7 +188,7 @@
 									</div>
 								</div>
 						</div>
-						<form action="#" class="contact__form">
+						<form action="https://formsubmit.co/5721c5c067fd73c95543af7337992a3f" method="POST" class="contact__form">
 							<div class="contact__talk">Or contact me via form:</div>
 							<input class="contact__form-input" type="text" name="name" placeholder="Name">
 							<input class="contact__form-input" type="email" name="email" placeholder="Email">

@@ -120,6 +120,7 @@ html {
 			font-size: 14px;
 			line-height: 46px;
 			text-align: center;
+			cursor: pointer;
 			@media (max-width: 768px) {
 					display: block;
 					font-size: 30px;
@@ -223,6 +224,7 @@ html {
 }
 
 .about {
+	padding: 30px 0;
 	&__container {
 
 	}
@@ -233,7 +235,7 @@ html {
 		max-width: 1024px;
 		padding: 0 40px;
 		column-gap: 30px;
-		margin: 130px auto;
+		margin: 100px auto;
 		@media (max-width:767.98px) {
 			text-align: center;
 			padding: 0 30px;
@@ -317,7 +319,7 @@ html {
 }
 
 .skills{
-	padding: 0 0 50px 0;
+	padding: 30px 0;
 	&__container {
 		
 	}
@@ -383,7 +385,7 @@ html {
 }
 
 .portfolio {
-	margin-bottom: 100px;
+	padding: 30px 0;
 	&__container {
 		
 	}
@@ -392,8 +394,12 @@ html {
 
 	&__projects {
 		display: grid;
-		//grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+		align-items: center;
+		justify-content: center;
+		grid-template-columns: repeat(auto-fill, 30%);;
 		gap: 10px;
+		margin: 0 auto;
+		width: 100%;
 	}
 
 	&__item {
@@ -424,7 +430,6 @@ html {
 .contact {
 	background: #ebeaea;
 	padding: 30px 0;
-
 	&__container {}
 
 	&__body {

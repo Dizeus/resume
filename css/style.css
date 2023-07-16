@@ -193,6 +193,7 @@ html {
   font-size: 14px;
   line-height: 46px;
   text-align: center;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .header__link {
@@ -298,6 +299,9 @@ html {
   }
 }
 
+.about {
+  padding: 30px 0;
+}
 .about__body {
   display: flex;
   flex-direction: row;
@@ -305,7 +309,7 @@ html {
   max-width: 1024px;
   padding: 0 40px;
   column-gap: 30px;
-  margin: 130px auto;
+  margin: 100px auto;
 }
 @media (max-width: 767.98px) {
   .about__body {
@@ -381,7 +385,7 @@ html {
   margin: 0 10px 0 0;
 }
 .skills {
-  padding: 0 0 50px 0;
+  padding: 30px 0;
 }
 .skills__list {
   display: flex;
@@ -431,11 +435,16 @@ html {
 }
 
 .portfolio {
-  margin-bottom: 100px;
+  padding: 30px 0;
 }
 .portfolio__projects {
   display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 30%);
   gap: 10px;
+  margin: 0 auto;
+  width: 100%;
 }
 .portfolio__item {
   height: 300px;
