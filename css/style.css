@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #616161;
+  color: #333;
   font-size: 12px;
 }
 
@@ -138,11 +138,16 @@ html {
 .header__title-text {
   color: #222;
   font-size: 20px;
-  line-height: 50px;
+  line-height: 2.5;
 }
 @media (max-width: 767.98px) {
   .header__title-text {
     font-size: 16px;
+  }
+}
+@media (max-width: 375.98px) {
+  .header__title-text {
+    display: none;
   }
 }
 .header__title-name {
@@ -342,37 +347,38 @@ html {
 .about__position {
   color: #AAA;
   font-size: 16px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: 300;
-  line-height: 19.2px;
+  line-height: 1.2;
   margin-bottom: 10px;
 }
 .about__name {
-  color: #333;
   font-size: 48px;
-  font-family: Poppins;
   font-weight: 600;
-  line-height: 56px;
+  line-height: 1.2;
   margin-bottom: 20px;
 }
 @media (max-width: 767.98px) {
   .about__name {
     font-size: 36px;
-    line-height: 56px;
   }
 }
 .about__description {
   color: #666;
   font-size: 14px;
-  font-family: Poppins;
-  font-style: normal;
   font-weight: 400;
   line-height: 24.5px;
   margin-bottom: 25px;
 }
+@media (max-width: 575.98px) {
+  .about__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .about__cv {
-  margin-right: 10px;
+  margin: 0 10px 0 0;
 }
 .skills {
   padding: 0 0 50px 0;
@@ -382,8 +388,7 @@ html {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  row-gap: 5px;
-  column-gap: 5px;
+  gap: 5px;
   margin: 0 auto;
 }
 .skills__item {
@@ -406,31 +411,39 @@ html {
 .skills__item img {
   height: 40px;
 }
+@media (max-width: 768px) {
+  .skills__item {
+    width: 90px;
+  }
+  .skills__item img {
+    height: 30px;
+  }
+}
 .skills__item-text {
   padding: 15px 0 0 0;
   font-size: 16px;
   letter-spacing: 0.8px;
 }
-
-.main {
-  flex: 1 1 auto;
-  padding: 100px 0 0 0;
+@media (max-width: 768px) {
+  .skills__item-text {
+    font-size: 14px;
+  }
 }
-.main .portfolio__container {
+
+.portfolio {
   margin-bottom: 100px;
 }
-.main .portfolio__projects {
+.portfolio__projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 10px;
 }
-.main .portfolio__item {
-  width: 300px;
-  height: 200px;
+.portfolio__item {
+  height: 300px;
   border-radius: 10px;
   border: 1px solid #E5E5E5;
   background: #333;
 }
-.main .portfolio__item:hover {
+.portfolio__item:hover {
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
@@ -440,107 +453,109 @@ html {
   -o-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
   box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
 }
-.main .contact {
+.portfolio__item-1 {
+  grid-column: span 2;
+}
+.portfolio__item-4 {
+  grid-column: span 2;
+}
+
+.contact {
   background: #ebeaea;
   padding: 30px 0;
 }
-.main .contact__container {
+.contact__body {
   display: flex;
+  justify-content: space-between;
   column-gap: 40px;
 }
 @media (max-width: 768px) {
-  .main .contact__container {
+  .contact__body {
     flex-direction: column;
   }
 }
-.main .contact__data {
-  padding: 0 100px 0 0;
-  flex: 0 1 50%;
+.contact__data {
+  flex: 0 1 480px;
 }
-.main .contact__talk {
+.contact__contacts {
+  padding: 40px 0 0 0;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.contact__talk {
   font-size: 16px;
-  margin-bottom: 40px;
   max-width: 300px;
   line-height: 1.3;
 }
-.main .contact__icons img {
-  width: 25px;
-}
-.main .contact__header {
+.contact__header {
   font-size: 18px;
   font-weight: 600;
   color: #333;
 }
-.main .contact__copytext {
+.contact__copytext {
   display: flex;
   justify-content: space-between;
   line-height: 19.2px;
   padding: 6px 0px;
   border-bottom: 1.5px solid #333;
-  margin-bottom: 15px;
 }
-.main .contact__info {
+.contact__info {
   background-color: #ebeaea;
   font-size: 14px;
   font-weight: 400;
   width: 100%;
 }
-.main .contact__copy-button {
+.contact__copy-button {
   background-color: #ebeaea;
 }
-.main .contact__copy-button img {
-  width: 15px;
+.contact__copy-img {
+  width: 20px;
 }
-.main .contact__icons {
+.contact__icons {
   display: flex;
   column-gap: 16px;
-  margin-top: 30px;
 }
-.main .contact__form {
+.contact__icons img {
+  width: 25px;
+}
+.contact__form {
   display: flex;
   flex-direction: column;
-  padding: 65px 0 0 0;
+  padding: 0 0 0 0;
   row-gap: 20px;
   flex: 0 1 50%;
 }
-.main .contact__form-name {
+.contact__form-input {
   padding: 11.53px 11.53px 11.54px 11.53px;
   border-radius: 5px;
   border: 1px solid #333;
   background: #FFF;
 }
-.main .contact__form-name::placeholder {
+.contact__form-input::placeholder {
   color: #757575;
   font-size: 16px;
 }
-.main .contact__form-email {
-  padding: 11.53px 11.53px 11.54px 11.53px;
-  border-radius: 5px;
-  border: 1px solid #333;
-  background: #FFF;
-}
-.main .contact__form-email::placeholder {
-  color: #757575;
-  font-size: 16px;
-}
-.main .contact__form-message {
-  padding: 11.53px 11.53px 11.54px 11.53px;
-  border-radius: 5px;
-  border: 1px solid #333;
-  background: #FFF;
-}
-.main .contact__form-message::placeholder {
-  color: #757575;
-  font-size: 16px;
-}
-.main .contact__form-button {
+.contact__form-button {
   background: #333;
   color: #FFF;
   align-self: flex-start;
+  height: 40px;
+  padding: 0px 40px;
+  border-radius: 30px;
+  border: 1px solid #333;
+  box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.22);
+  transition: all ease 0.5s;
 }
-.main .contact__form-button:hover {
+.contact__form-button:hover {
   background: #FFF;
   color: #333;
+}
+
+.main {
+  flex: 1 1 auto;
+  padding: 100px 0 0 0;
 }
 
 .title {
