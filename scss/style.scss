@@ -170,6 +170,7 @@ html {
 			border-radius: 30px;
 			border: 1px solid #333;
 			background: #FFF;
+			color: #333;
 			box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.22);
 			transition: all 0.3s ease 0s;
 			&:hover {
@@ -245,7 +246,7 @@ html {
 			text-align: center;
 			padding: 0 30px;
 			flex-direction: column;
-			margin: 60px auto;
+			margin: 30px auto;
 			row-gap: 30px;
 		}
 	}
@@ -441,12 +442,14 @@ html {
 		justify-content: center;
 		row-gap: 20px;
 		position: absolute;
+		text-align: center;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
 		border-radius: 10px;
 		background-color: rgba(0, 0, 0, 0.884);
+		padding: 5px;
 		&-title{
 			color: #fff;
 			font-size: 2rem;

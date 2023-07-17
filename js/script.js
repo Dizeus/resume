@@ -1,10 +1,15 @@
 const links = document.getElementsByClassName('header__link');
 
+const onMenuBurgerClick = () =>{
+	document.querySelector(".header__burger").classList.toggle('active');
+	document.querySelector(".header__menu-body").classList.toggle('active');
+	document.body.classList.toggle("lock");
+}
+
 const onHeaderLinkClick = (event, id)=>{
 	const section = document.getElementById(`${id}`);
 	const y = section.getBoundingClientRect().top + window.scrollY - document.querySelector('.header').offsetHeight;
 	setTimeout(function() {window.scrollTo({top:y, left:0, behavior: "smooth"})},1);
-
 
 	if(event.target.classList.value !== 'header__link header__link_active'){
 		[...links].forEach(link => {
@@ -14,11 +19,7 @@ const onHeaderLinkClick = (event, id)=>{
 	}
 }
 
-const onMenuBurgerClick = () =>{
-	document.querySelector(".header__burger").classList.toggle('active');
-	document.querySelector(".header__menu-body").classList.toggle('active');
-	document.body.classList.toggle("lock");
-}
+
 
 const onCopyInfo = (n) =>{
 	let copyText = [...document.querySelectorAll('.contact__info')];
