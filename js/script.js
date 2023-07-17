@@ -2,7 +2,7 @@ const links = document.getElementsByClassName('header__link');
 
 const onHeaderLinkClick = (event, id)=>{
 	const section = document.getElementById(`${id}`);
-	const y = section.getBoundingClientRect().top + window.scrollY - event.target.offsetParent.getBoundingClientRect().height;
+	const y = section.getBoundingClientRect().top + window.scrollY - document.querySelector('.header').offsetHeight;
 	setTimeout(function() {window.scrollTo({top:y, left:0, behavior: "smooth"})},1);
 
 
