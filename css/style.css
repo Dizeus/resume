@@ -240,7 +240,7 @@ html {
   border: 1px solid #333;
   background: #FFF;
   box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.22);
-  transition: all ease 0.5s;
+  transition: all 0.3s ease 0s;
 }
 .header__cv:hover {
   background: #333;
@@ -441,32 +441,71 @@ html {
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, 30%);
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 10px;
   margin: 0 auto;
   width: 100%;
 }
 .portfolio__item {
   height: 300px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.portfolio__item:hover .portfolio__overlay {
+  display: flex;
+}
+.portfolio__item-img {
+  border: 5px solid #E5E5E5;
   border-radius: 10px;
-  border: 1px solid #E5E5E5;
-  background: #333;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.portfolio__item:hover {
-  -webkit-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  -o-transform: translateY(-5px);
-  transform: translateY(-5px);
-  -webkit-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
-  -o-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+.portfolio__overlay {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.884);
 }
-.portfolio__item-1 {
-  grid-column: span 2;
+.portfolio__overlay-title {
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
 }
-.portfolio__item-4 {
-  grid-column: span 2;
+.portfolio__overlay-description {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.portfolio__overlay-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.portfolio__overlay-technologies li {
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+.portfolio__overlay-buttons {
+  display: flex;
+  column-gap: 10px;
+}
+.portfolio__overlay-buttons a {
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 .contact {
@@ -602,7 +641,7 @@ html {
   border: 1px solid #333;
   background: #FFF;
   box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.22);
-  transition: all ease 0.5s;
+  transition: all 0.3s ease 0s;
 }
 .button:hover {
   background: #333;
