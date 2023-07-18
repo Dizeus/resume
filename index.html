@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/png" href="goсorona/image/header/favicon.ico">
     <title>Resume</title>
 </head>
@@ -27,7 +27,7 @@
 							<li onclick="onHeaderLinkClick(event, 'contact')" class="header__link">Contact</li>
 						</ul>
 					</div>
-					<button class="header__cv main-button">Download CV</button>
+					<button class="button">Download CV</button>
 					<div class="header__burger" onclick="onMenuBurgerClick()">
 						<div></div>
 						<div></div>
@@ -43,15 +43,14 @@
 				<div class="about__container">
 					<div class="about__body">		
 						<div class="about__img-container">
-							<img src="image/me.jpg" class="about__img">
-							
+							<img src="image/me.jpg" class="about__img">	
 						</div>
 						
 						<div class="about__text">
 							<div class="about__position">Frontend-developer</div>
 							<div class="about__name">Illia Kharchuk</div>
 							<div class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ratione, nesciunt, esse nulla nihil tempore facilis at cum vero ullam optio adipisci quaerat quis, fugiat alias. Dolor, nisi dolores, nihil commodi culpa, architecto vitae eius maiores deserunt natus eligendi qui. Veniam dicta voluptates atque ad fugit voluptatem! </div>
-							<div class="about__icons contact-icons">
+							<div class="contact-icons">
 								<a target="_blank" href="https://github.com/Dizeus"><img src="image/contact-icons/github.svg" alt="Github"></a>
 								<a target="_blank" href="https://www.linkedin.com/in/illia-kharchuk-0b8a17283"><img	src="image/contact-icons/linkedin.svg" alt="Linkedin"></a>
 								<a target="_blank" href="https://t.me/zeseleon"><img src="image/contact-icons/telegram.svg" alt="Telegram"></a>
@@ -59,12 +58,11 @@
 							
 						</div>
 					</div>
-				</div>
-				
+				</div>	
 			</section>
 			<section id="skills" class="skills">
 				<div class="skills__container">
-					<div class="skills__title title">Skills</div>	
+					<div class="title">Skills</div>	
 					<ul class="skills__list">
 						<li class="skills__item">
 							<img src="image/skills-icons/html.svg" alt="HTML">
@@ -136,7 +134,7 @@
 			</section>
 			<section id="portfolio" class="portfolio">
 				<div class="portfolio__container">
-					<div class="portfolio__title title">Portfolio</div>
+					<div class="title">Portfolio</div>
 					<div class="portfolio__projects">
 						<div class="portfolio__item portfolio__item-1">
 							<img class="portfolio__item-img"  src="image/portfolio/Corona.png" alt="">
@@ -149,8 +147,8 @@
 									<li>HTML</li>
 								</ul>
 								<div class="portfolio__overlay-buttons">
-									<a href="https://dizeus.github.io/" class="button">View Live</a>
-									<a href="https://github.com/Dizeus/dizeus.github.io" class="button">Github</a>
+									<a target="_blank" href="https://dizeus.github.io/" class="button">View Live</a>
+									<a target="_blank" href="https://github.com/Dizeus/dizeus.github.io" class="button">Github</a>
 								</div>
 								
 								
@@ -170,8 +168,8 @@
 									<li>Async js</li>
 								</ul>
 								<div class="portfolio__overlay-buttons">
-									<a href="#" class="button">View Live</a>
-									<a href="#" class="button">Github</a>
+									<a target="_blank" href="#" class="button">View Live</a>
+									<a target="_blank" href="#" class="button">Github</a>
 								</div>
 							
 							
@@ -190,8 +188,8 @@
 									<li>Async js</li>
 								</ul>
 								<div class="portfolio__overlay-buttons">
-									<a href="#" class="button">View Live</a>
-									<a href="#" class="button">Github</a>
+									<a target="_blank" href="#" class="button">View Live</a>
+									<a target="_blank" href="#" class="button">Github</a>
 								</div>
 							
 							
@@ -210,11 +208,9 @@
 									<li>Async js</li>
 								</ul>
 								<div class="portfolio__overlay-buttons">
-									<a href="#" class="button">View Live</a>
-									<a href="#" class="button">Github</a>
+									<a target="_blank" href="#" class="button">View Live</a>
+									<a target="_blank" href="#" class="button">Github</a>
 								</div>
-							
-							
 							</div>
 							<img class="portfolio__item-img" src="image/portfolio/social-network.png" alt="">
 						</div>
@@ -223,7 +219,7 @@
 			</section>
 			<section id="contact" class="contact">
 				<div class="contact__container">
-					<div class="contact__title title">Contact</div>
+					<div class="title">Contact</div>
 					<div class="contact__body">
 						<div class="contact__data">						
 								<div class="contact__talk">If you want to discuss business issues or just chat, you can contact me at the contacts below or via form:</div>
@@ -258,7 +254,7 @@
 										</div>
 									</div>
 									
-									<div class="contact__icons">
+									<div class="  contact-icons">
 										<a target="_blank" href="https://github.com/Dizeus"><img src="image/contact-icons/github.svg" alt="Github"></a>
 										<a target="_blank" href="https://www.linkedin.com/in/illia-kharchuk-0b8a17283"><img src="image/contact-icons/linkedin.svg" alt="Linkedin"></a>
 										<a target="_blank" href="https://t.me/zeseleon"><img src="image/contact-icons/telegram.svg" alt="Telegram"></a>
@@ -270,7 +266,7 @@
 							<input class="contact__form-input" type="text" name="name" placeholder="Name">
 							<input class="contact__form-input" type="email" name="email" placeholder="Email">
 							<textarea class="contact__form-input" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-							<button class="contact__form-button" type="submit">Send Message</button>
+							<button class="contact__form-button button" type="submit">Send Message</button>
 						</form>
 					</div>
 				</div>

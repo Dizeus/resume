@@ -2,27 +2,30 @@
 
 @import "nullstyle.scss";
 
-//------------------------------------------------------------------------------------//
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,800;1,400&display=swap');
-//------------------------------------------------------------------------------------//
+//---------------------------------- Fonts --------------------------------------------------//
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,800;1,400&display=swap');
+
+//---------------------------------- Variables -----------------------------------------------//
+
+$brown: #333;
+$creamwhite: #e3e3e3;
+
+//---------------------------------- Variables -----------------------------------------------//
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 
 }
-
 body {
 	font-family: 'Poppins', sans-serif;
-	color: #333;
-	font-size: 12px;
+	color: $brown;
+	font-size: 16px;
 
 }
-
 html {
 	scroll-behavior: smooth;
-	font-size: 16px;
 }
 
 .header {
@@ -32,8 +35,6 @@ html {
 	left: 0;
 	background: #FFF;
 	position: fixed;
-	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .08);
-	-moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .08);
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
 	z-index: 10;
 		&__container {
@@ -42,10 +43,12 @@ html {
 			justify-content: space-between;
 			align-items: center;
 		}
+
 		&__title{
 			display: flex;
 			column-gap: 8px;
 			align-items: center;
+
 			&-img {
 				width: 50px;
 				height: 50px;
@@ -63,6 +66,7 @@ html {
 					font-size: 18px;
 				}
 			}
+
 			&-text {
 				color: #222;
 				font-size: 20px;
@@ -85,6 +89,7 @@ html {
 			column-gap: 3.4vw;
 			align-items: center;
 		}
+		
 		&__menu-body{
 			@media (max-width: 768px) {
 				display: flex;
@@ -94,7 +99,7 @@ html {
 				min-height: 100vh;
 				width: 60%;
 				background-color: rgba(0, 0, 0, 0.9);
-				transition: all 0.2s;
+				transition: all 0.2s ease 0s;
 			}
 			&.active {
 				right: 0;
@@ -116,44 +121,36 @@ html {
 		}
 
 		&__link {
-			color: #333;
 			font-size: 14px;
-			line-height: 46px;
+			line-height: 3.2;
 			text-align: center;
 			cursor: pointer;
-			@media (min-width:767.98px) {
-				opacity: 0.7;
-				&:hover {
-					opacity: 1;
-					&::after {
-						width: 100%
-					}
+			opacity: 0.7;
+				
+			&:hover {
+				opacity: 1;
+				&::after {
+					width: 100%
 				}
-				&::after{
-					content: "";
-					display: block;
-					width: 0;
-					height: 2px;
-					background: #333;
-					transition: all 0.3s ease 0s;
-					margin: 2px 0 0 0;
-				}	
-			
 			}
-			@media (max-width:767.98px){
-				color: #FFF;
+			&::after{
+				content: "";
 				display: block;
+				width: 0;
+				height: 2px;
+				background: $brown;
+				transition: all 0.3s ease 0s;
+			}	
+			@media (max-width:767.98px){
+				opacity: 1;
+				color: $creamwhite;
 				font-size: 30px;
 				line-height: 70px;
 				text-align: left;
 				&::after {
 					content: "";
-					display: block;
 					width: 200px;
-					height: 2px;
-					background: #c0bfbf;
-					transition: all 0.3s ease 0s;
-					margin: 2px 0 0 0;
+					background: $creamwhite;
 				}
 			}
 			
@@ -163,24 +160,6 @@ html {
 			&::after{
 				width: 100%;
 			}	
-		}
-		&__cv {
-			height: 40px;
-			padding: 0px 40px;
-			border-radius: 30px;
-			border: 1px solid #333;
-			background: #FFF;
-			color: #333;
-			box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.22);
-			transition: all 0.3s ease 0s;
-			&:hover {
-				background: #333;
-				color: white;
-				
-			}
-			@media (max-width:575.98px) {
-				padding: 0px 25px;
-			}
 		}
 		&__burger{
 			display: none;
@@ -197,7 +176,7 @@ html {
 					left: 0;
 					width: 100%;
 					height: 2px;
-					background-color: #333;
+					background-color: $brown;
 					transition: all 0.2s;
 					border-radius: 10%;
 					&:first-child {
@@ -210,7 +189,7 @@ html {
 				}
 				&.active {
 					div {
-						background-color: #fff;
+						background-color: $creamwhite;
 						transform: scale(0);
 						&:first-child {
 							transform: rotate(-45deg);
@@ -231,9 +210,7 @@ html {
 
 .about {
 	padding: 30px 0;
-	&__container {
-
-	}
+	
 	&__body{
 		display: flex;
 		flex-direction: row;
@@ -259,7 +236,6 @@ html {
 		box-shadow: 0 0 25px 0 rgba(0, 0, 0, .1);
 		width: 100%;
 		height: 100%;
-
 		@media (max-width:767.98px) {
 			width: 70%;
 			height: 70%;
@@ -286,11 +262,9 @@ html {
 	&__position {
 		color: #AAA;
 		font-size: 16px;
-		font-style: normal;
 		font-weight: 300;
 		line-height: 1.2;
 		margin-bottom: 10px;
-		
 	}
 
 	&__name {
@@ -306,47 +280,21 @@ html {
 	&__description {
 		color: #666;
 		font-size: 14px;
-		font-weight: 400;
-		line-height: 24.5px;
+		line-height: 1.7;
 		margin-bottom: 25px;
-	}
-
-	&__icons {
-		
-		@media (max-width:575.98px) {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-	}
-
-	&__cv {
-		margin: 0 10px 0 0;
 	}	
-
-	&__contact {}
 }
 
 .skills{
 	padding: 30px 0;
-	&__container {
-		
-	}
 	
-	&__title {}
-
 	&__list {
-		//display: grid;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
-		//padding: 20px 0 30px 0;
-		//grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
 		gap: 5px;
-		//max-width: 80%;
 		margin: 0 auto;
-		
 	}
 
 	&__item {
@@ -358,18 +306,13 @@ html {
 		text-align: center;
 		padding: 15px;
 		transition: all 0.1s ease 0s;
-		//border: 1px solid #e4e4e4;
 		border-radius: 10px;
-
 		&:hover {
-			//
 			transform: scale(1.1);
 			-webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, .1);
 			-moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, .1);
 			box-shadow: 0 0 25px 0 rgba(0, 0, 0, .1);
-			//background-color: #e4e4e4;
 		}
-
 		img {
 			height: 40px;
 		}
@@ -388,18 +331,12 @@ html {
 		@media (max-width: 768px) {
 			font-size: 14px;
 		}
-		//text-transform: uppercase;
 	}
 			
 }
 
 .portfolio {
 	padding: 30px 0;
-	&__container {
-		
-	}
-
-	&__title {}
 
 	&__projects {
 		display: grid;
@@ -416,7 +353,6 @@ html {
 
 	&__item {
 		height: 300px;
-		//border-radius: 10px;
 		overflow: hidden;
 		position: relative;
 		transition: all 0.3s ease 0s;
@@ -450,13 +386,12 @@ html {
 		border-radius: 10px;
 		background-color: rgba(0, 0, 0, 0.884);
 		padding: 5px;
+		color: $creamwhite;
 		&-title{
-			color: #fff;
 			font-size: 2rem;
 			letter-spacing: 1.5px;
 		}
 		&-description{
-			color: #fff;
 			font-size: 1rem;
 			letter-spacing: 1px;
 		}
@@ -464,11 +399,10 @@ html {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 10px 30px;
-			color: #fff;
 			text-transform: uppercase;
 			li{
 				background-color: black;
-				padding: 5px;
+				padding: 5px 10px;
 				border-radius: 5px;
 			}
 		}
@@ -476,6 +410,7 @@ html {
 			display: flex;
 			column-gap: 10px;
 			a{
+				color: $brown;
 				display: flex;
 				text-align: center;
 				align-items: center;
@@ -489,23 +424,17 @@ html {
 .contact {
 	background: #ebeaea;
 	padding: 30px 0;
-	&__container {}
-
 	&__body {
 		display: flex;
 		justify-content: space-between;
 		column-gap: 40px;
-
 		@media (max-width: 768px) {
 			flex-direction: column;
 		}
 	}
 
-	&__title {}
-
 	&__data {
 		flex: 0 1 480px;
-
 	}
 
 	&__contacts {
@@ -525,7 +454,7 @@ html {
 	&__header {
 		font-size: 18px;
 		font-weight: 600;
-		color: #333;
+		color: $brown;
 	}
 
 	&__copytext {
@@ -533,14 +462,12 @@ html {
 		justify-content: space-between;
 		line-height: 19.2px;
 		padding: 6px 0px;
-		border-bottom: 1.5px solid #333;
-		//margin-bottom: 15px;
+		border-bottom: 1.5px solid $brown;
 	}
 
 	&__info {
 		background-color: #ebeaea;
 		font-size: 14px;
-		font-weight: 400;
 		width: 100%;
 	}
 
@@ -552,29 +479,17 @@ html {
 		width: 20px;
 	}
 
-	&__icons {
-		display: flex;
-		column-gap: 16px;
-
-		//margin-top: 30px;
-		img {
-			width: 25px;
-		}
-	}
-
 	&__form {
 		display: flex;
 		flex-direction: column;
-		padding: 0 0 0 0;
 		row-gap: 20px;
 		flex: 0 1 50%;
-
 	}
 
 	&__form-input {
-		padding: 11.53px 11.53px 11.54px 11.53px;
+		padding: 11.5px 11.5px 11.5px 11.5px;
 		border-radius: 5px;
-		border: 1px solid #333;
+		border: 1px solid $brown;
 		background: #FFF;
 
 		&::placeholder {
@@ -583,19 +498,13 @@ html {
 		}
 	}
 
-	&__form-button {
-		background: #333;
-		color: #FFF;
+	form > &__form-button {
+		background: $brown;
+		color: $creamwhite;
 		align-self: flex-start;
-		height: 40px;
-		padding: 0px 40px;
-		border-radius: 30px;
-		border: 1px solid #333;
-		box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.22);
-		transition: all ease 0.5s;
 		&:hover {
 			background: #FFF;
-			color: #333;
+			color: $brown;
 		}
 	}
 }
@@ -637,18 +546,20 @@ html {
 	height: 40px;
 	padding: 0px 40px;
 	border-radius: 30px;
-	border: 1px solid #333;
-	background: #FFF;
+	border: 1px solid $brown;
+	background: white;
 	box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.22);
 	transition: all 0.3s ease 0s;
-
 	&:hover {
-		background: #333;
+		background: $brown;
 		color: white;
 
 	}
-}
-
+	@media (max-width:575.98px) {
+		padding: 0px 25px;
+	}
+}	
+						
 .title {
 	color: #333;
 	font-size: 26px;
