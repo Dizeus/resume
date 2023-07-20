@@ -373,6 +373,7 @@ html {
 	}
 	&__overlay{
 		display: none;
+		text-align: center;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
@@ -544,6 +545,7 @@ html {
 
 .button {
 	height: 40px;
+	color: $brown;	
 	padding: 0px 40px;
 	border-radius: 30px;
 	border: 1px solid $brown;
