@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="icon" type="image/png" href="image/header/favicon.ico">
-    <title>Resume</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
+	<link rel="manifest" href="image/favicon/site.webmanifest">
+    <title>Illia Kharchuk</title>
 </head>
 <body>
     <div class="wrapper">
@@ -34,9 +37,7 @@
 						<div></div>
 					</div>
 				</nav>
-
 			</div>
-			
         </header>
         <main class="main">
 			<section id="about" class="about">
@@ -49,8 +50,8 @@
 						<div class="about__text">
 							<div class="about__position">Frontend-developer</div>
 							<div class="about__name">Illia Kharchuk</div>
-							<div class="about__description">I'm Kharchuk Illia, a passionate Junior Frontend Developer. Skilled in HTML, CSS, and JavaScript, React and etc. I love creating visually
-							appealing and user-friendly websites. Eager to learn and grow, I thrive in collaborative environments. Let's build
+							<div class="about__description">I'm Kharchuk Illia, a passionate Frontend Developer. A final-year computer science student. I love creating visually
+							appealing, technically sophisticated and user-friendly websites. Eager to learn and grow, I thrive in collaborative environments. Let's build
 							something amazing together! </div>
 							<div class="contact-icons">
 								<a target="_blank" href="https://github.com/Dizeus"><img src="image/contact-icons/github.svg" alt="Github"></a>
@@ -83,6 +84,10 @@
 							<div class="skills__item-text">Typescript</div>
 						</li>
 						<li class="skills__item">
+							<img src="image/skills-icons/nodejs.svg" alt="Node.js">
+							<div class="skills__item-text">Node.js</div>
+						</li>
+						<li class="skills__item">
 							<img src="image/skills-icons/react.svg" alt="React">
 							<div class="skills__item-text">React</div>
 						</li>
@@ -99,24 +104,16 @@
 							<div class="skills__item-text">Git</div>
 						</li>
 						<li class="skills__item">
-							<img src="image/skills-icons/github.svg" alt="Github">
-							<div class="skills__item-text">Github</div>
+							<img src="image/skills-icons/nextjs.svg" alt="Next.js">
+							<div class="skills__item-text">Next.js</div>
 						</li>
 						<li class="skills__item">
-							<img src="image/skills-icons/mysql.svg" alt="MySQL">
-							<div class="skills__item-text">MySQL</div>
+							<img src="image/skills-icons/mongodb.svg" alt="MongoDB">
+							<div class="skills__item-text">MongoDB</div>
 						</li>
 						<li class="skills__item">
 							<img src="image/skills-icons/postgresql.svg" alt="PostgreSQL">
 							<div class="skills__item-text">PostgreSQL</div>
-						</li>
-						<li class="skills__item">
-							<img src="image/skills-icons/avocode.svg" alt="Avocode">
-							<div class="skills__item-text">Avocode</div>
-						</li>
-						<li class="skills__item">
-							<img src="image/skills-icons/figma.svg" alt="Figma">
-							<div class="skills__item-text">Figma</div>
 						</li>
 						<li class="skills__item">
 							<img src="image/skills-icons/python.svg" alt="Python">
@@ -139,7 +136,7 @@
 					<div class="title">Portfolio</div>
 					<div class="portfolio__projects">
 						<div class="portfolio__item portfolio__item-1">
-							<img class="portfolio__item-img"  src="image/portfolio/Corona.png" alt="">
+							<img class="portfolio__item-img"  src="image/portfolio/Corona.png" alt="Goglosser project">
 							<div class="portfolio__overlay">
 								<div class="portfolio__overlay-title">GoCorona</div>
 								<div class="portfolio__overlay-description">Lending responsive crossbrowser page</div>
@@ -158,40 +155,38 @@
 							
 						</div>
 						<div class="portfolio__item portfolio__item-2">
-							<img class="portfolio__item-img" src="image/portfolio/geocoder.png" alt="">
+							<img class="portfolio__item-img" src="image/portfolio/petspaw.png" alt="project image">
 							<div class="portfolio__overlay">
-								<div class="portfolio__overlay-title">Geocoder</div>
-								<div class="portfolio__overlay-description">Async js Api website</div>
+								<div class="portfolio__overlay-title">Petspaw</div>
+								<div class="portfolio__overlay-description">Next.js React website with API</div>
 								<ul class="portfolio__overlay-technologies">
-									<li>sass</li>
-									<li>JS</li>
-									<li>HTML</li>
+									<li>React</li>
+									<li>Next.js</li>
 									<li>API</li>
 									<li>Async js</li>
 								</ul>
 								<div class="portfolio__overlay-buttons">
-									<a target="_blank" href="#" class="button">View Live</a>
-									<a target="_blank" href="#" class="button">Github</a>
+									<a target="_blank" href="https://petspaw-pearl.vercel.app/" class="button">View Live</a>
+									<a target="_blank" href="https://github.com/Dizeus/petspaw" class="button">Github</a>
 								</div>
 							
 							
 							</div>
 						</div>
 						<div class="portfolio__item portfolio__item-3">
-							<img class="portfolio__item-img" src="image/portfolio/business.png" alt="">
+							<img class="portfolio__item-img" src="image/portfolio/todolist.png" alt="to do list project">
 							<div class="portfolio__overlay">
-								<div class="portfolio__overlay-title">Business</div>
-								<div class="portfolio__overlay-description">Async js Api website</div>
+								<div class="portfolio__overlay-title">To do list</div>
+								<div class="portfolio__overlay-description">Fullstack PERN project</div>
 								<ul class="portfolio__overlay-technologies">
-									<li>sass</li>
-									<li>JS</li>
-									<li>HTML</li>
-									<li>API</li>
-									<li>Async js</li>
+									<li>PostgreSQL</li>
+									<li>ExpressJS</li>
+									<li>React</li>
+									<li>NodeJS</li>
 								</ul>
 								<div class="portfolio__overlay-buttons">
-									<a target="_blank" href="#" class="button">View Live</a>
-									<a target="_blank" href="#" class="button">Github</a>
+									<a target="_blank" href="https://pj-todolist-a8ea7b03d8fd.herokuapp.com/" class="button">View Live</a>
+									<a target="_blank" href="https://github.com/Dizeus/to-do-list/tree/main" class="button">Github</a>
 								</div>
 							
 							
@@ -277,10 +272,8 @@
         </main>
         <footer id="footer" class="footer">
 			<div class="footer__container">
-				<div class="footer__copyright">Copyright 2023</div>
-				
+				<div class="footer__copyright">&copy Copyright 2023</div>	
 			</div>
-			
         </footer>
     </div>
     <script src="js/script.js"></script>

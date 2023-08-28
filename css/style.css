@@ -438,6 +438,7 @@ html {
 }
 .portfolio__overlay {
   display: none;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -596,6 +597,7 @@ form > .contact__form-button:hover {
 
 .button {
   height: 40px;
+  color: #333;
   padding: 0px 40px;
   border-radius: 30px;
   border: 1px solid #333;
