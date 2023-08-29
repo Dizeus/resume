@@ -44,7 +44,10 @@
 				<div class="about__container">
 					<div class="about__body">		
 						<div class="about__img-container">
-							<img src="image/me.jpg" class="about__img">	
+							<picture>
+								<source srcset="image/photo/me_med.webp" type="image/webp"/>
+								<img src="image/photo/me.jpg" class="about__img">
+							</picture>
 						</div>
 						
 						<div class="about__text">
@@ -136,7 +139,10 @@
 					<div class="title">Portfolio</div>
 					<div class="portfolio__projects">
 						<div class="portfolio__item portfolio__item-1">
-							<img class="portfolio__item-img"  src="image/portfolio/Corona.png" alt="Goglosser project">
+							<picture>
+								<source srcset="image/portfolio/Corona.webp">
+								<img class="portfolio__item-img"  src="image/portfolio/Corona.png" alt="Goglosser project">
+							</picture>
 							<div class="portfolio__overlay">
 								<div class="portfolio__overlay-title">GoCorona</div>
 								<div class="portfolio__overlay-description">Lending responsive crossbrowser page</div>
@@ -155,7 +161,10 @@
 							
 						</div>
 						<div class="portfolio__item portfolio__item-2">
-							<img class="portfolio__item-img" src="image/portfolio/petspaw.png" alt="project image">
+							<picture>
+								<source srcset="image/portfolio/petspaw.webp">
+								<img class="portfolio__item-img" src="image/portfolio/petspaw.png" alt="project image">
+							</picture>
 							<div class="portfolio__overlay">
 								<div class="portfolio__overlay-title">Petspaw</div>
 								<div class="portfolio__overlay-description">Next.js React website with API</div>
@@ -174,7 +183,10 @@
 							</div>
 						</div>
 						<div class="portfolio__item portfolio__item-3">
-							<img class="portfolio__item-img" src="image/portfolio/todolist.png" alt="to do list project">
+							<picture>
+								<source srcset="image/portfolio/todolist.webp">
+								<img class="portfolio__item-img" src="image/portfolio/todolist.png" alt="to do list project">
+							</picture>
 							<div class="portfolio__overlay">
 								<div class="portfolio__overlay-title">To do list</div>
 								<div class="portfolio__overlay-description">Fullstack PERN project</div>
@@ -196,17 +208,16 @@
 						<div class="portfolio__item portfolio__item-4">
 							<div class="portfolio__overlay">
 								<div class="portfolio__overlay-title">Networker</div>
-								<div class="portfolio__overlay-description">Async js Api website</div>
+								<div class="portfolio__overlay-description">Social Network Fullstack MERN project</div>
 								<ul class="portfolio__overlay-technologies">
-									<li>sass</li>
-									<li>JS</li>
-									<li>HTML</li>
-									<li>API</li>
-									<li>Async js</li>
+									<li>MongoDB</li>
+									<li>ExpressJS</li>
+									<li>React</li>
+									<li>NodeJS</li>
 								</ul>
 								<div class="portfolio__overlay-buttons">
 									<a target="_blank" href="#" class="button">View Live</a>
-									<a target="_blank" href="#" class="button">Github</a>
+									<a target="_blank" href="https://github.com/Dizeus/networker" class="button">Github</a>
 								</div>
 							</div>
 							<img class="portfolio__item-img" src="image/portfolio/social-network.png" alt="">
@@ -261,6 +272,7 @@
 						<form action="https://formsubmit.co/5721c5c067fd73c95543af7337992a3f" method="POST" class="contact__form">
 							<div class="contact__talk">Or contact me via form:</div>
 							<input class="contact__form-input" type="text" name="name" placeholder="Name">
+							<input type="hidden" name="_next" value="https://dizeus.github.io/resume/">
 							<input class="contact__form-input" type="email" name="email" placeholder="Email">
 							<textarea class="contact__form-input" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
 							<button class="contact__form-button button" type="submit">Send Message</button>
